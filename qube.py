@@ -37,21 +37,9 @@ elif nav=="1":
 	print(" ,'`-./_____\,-'`.")
 	print("     /       \ ")
 	print("\033[m")
-	site = input("\033[92m[1]\033[mhttps\n\033[92m[2]\033[mhttp\n\033[92m[3]\033[mOther\n[+]Qube:>>>")
-	if site=="1":
-		uweb = input("Enter Web: ")
-		page = requests.get('https://www.' + uweb + '.com')
-		tree = BeautifulSoup(page.content, 'html.parser')
-		print(tree.prettify())
-	elif site=="2":
-		usr_w = input("Enter Web: ")
-		branch = requests.get('http://www.' + usr_w + '.com')
-		bionic = BeautifulSoup(branch.content, 'html.parser')
-		print(bionic.prettify())
-	elif site=="3":
-		usr_pro = input("Enter web: ")
-		ice = requests.get('' + usr_pro + '')
-		rex = BeautifulSoup(ice.content,'html.parser')
-		print(rex.prettify())
+	usr_pro = input("Enter web: ")
+	ice = requests.get('' + usr_pro + '')
+	rex = BeautifulSoup(ice.content,'html.parser')
+	print(rex.prettify())
 elif nav=="2":
 	exit('[~]\033[92mThank You For Using Qube\033[m[~]')
